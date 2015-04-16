@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:orientation="vertical" >
+
+    <lib.pulltorefresh.PullToRefreshListView
+        android:id="@+id/lv_toother_bill"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="#ffffff"
+        android:dividerHeight="10dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="both" >
+    </lib.pulltorefresh.PullToRefreshListView>
+    
+                    <TextView
+                    android:id="@+id/view_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    
+                    android:textColor="@color/gray"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+</LinearLayout>

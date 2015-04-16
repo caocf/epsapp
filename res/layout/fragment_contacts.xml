@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f4f7"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/contacts_search"
+        android:paddingLeft="10dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="3dp"
+            android:src="@drawable/place_locate_search" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_search"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:focusable="false"
+                android:hint="搜索"
+                android:singleLine="true"
+                android:textColor="@color/light_gray" >
+            </EditText>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_search" >
+
+        <ExpandableListView
+            android:id="@+id/elv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@null"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none" >
+        </ExpandableListView>
+
+        <com.epeisong.base.view.IndexBar
+            android:id="@+id/bar"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" />
+
+<!--         <ImageView -->
+<!--             android:id="@+id/iv_pinyin" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:background="@drawable/pinyin_normal" -->
+<!--             android:clickable="true" -->
+<!--             android:focusable="true" -->
+<!--             android:focusableInTouchMode="true" -->
+<!--             android:paddingLeft="10dp" -->
+<!--             android:paddingRight="10dp" /> -->
+    </RelativeLayout>
+
+</RelativeLayout>

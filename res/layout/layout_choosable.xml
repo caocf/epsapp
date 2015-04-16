@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#379fff" >
+
+    <TextView
+        android:id="@+id/tv_choosable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/selector_common_arrow_gray_top_and_bottom"
+        android:text="选择条件"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/choosable_under_line_normal" />
+
+    <View
+        android:id="@+id/view_under_line"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0.5dp"
+        android:background="@drawable/selector_choosable_under_line" />
+
+</RelativeLayout>

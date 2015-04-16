@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="2dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/fl_choosable_002"
+            android:layout_width="match_parent"
+            
+            android:layout_height="match_parent" >
+
+            <include layout="@layout/layout_chooseable_line" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            
+            <LinearLayout 
+                android:id="@+id/ll_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                
+                android:layout_marginTop="10dp" 
+                android:layout_alignParentBottom="true"
+                >
+                <Button
+                android:id="@+id/btn_quick_order"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:background="@drawable/selector_common_btn_bg_orange"
+                android:gravity="center"
+                android:text="快速下单"
+                android:textColor="@color/white"
+                
+                android:textSize="22sp" />
+            <Button 
+                android:id="@+id/btn_quick_web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/contacts_mid_btn"
+                android:gravity="center"
+                android:text="快速加入网点"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/ll_order"
+                
+                android:textColor="@color/white"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical" >
+
+                <com.epeisong.base.view.EndlessEmptyListView
+                    android:id="@+id/lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    
+                    android:background="@color/white"
+                    android:cacheColorHint="@color/transparent" >
+                </com.epeisong.base.view.EndlessEmptyListView>
+
+                <TextView
+                    android:id="@+id/view_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    
+                    android:textColor="@color/gray"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_choose_container0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#55000000"
+            android:padding="10dp"
+            android:visibility="gone" >
+
+            <com.epeisong.ui.view.ChooseLineLayout
+                android:id="@+id/choose_line_layout0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </FrameLayout>
+    </FrameLayout>
+
+</LinearLayout>

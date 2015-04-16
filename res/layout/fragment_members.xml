@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/market_search_bg"
+        android:paddingLeft="10dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="3dp"
+            android:src="@drawable/place_locate_search" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/market_search_icon"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_toLeftOf="@id/btn_search"
+            android:layout_toRightOf="@+id/iv_search"
+            android:textCursorDrawable="@null"
+            android:background="@null"
+            android:hint="输入手机号搜索"
+            android:singleLine="true"
+            android:inputType="phone"
+            android:textColor="@color/black" >
+        </EditText>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@id/rl_search"
+        android:layout_marginTop="10dp"
+        android:background="@color/text_noyes"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="添加会员"
+            android:textColor="#7f7f7f"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/view_listline"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/text_noyes"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_add_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_item_white_gray"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="手机号添加"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/text_noyes" />
+
+        <TextView
+            android:id="@+id/tv_add_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_item_white_gray"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="二维码添加"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/text_noyes" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_item" >
+
+        <!-- <ExpandableListView -->
+        <!-- android:id="@+id/elv" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:cacheColorHint="@color/transparent" -->
+        <!-- android:divider="@null" -->
+        <!-- android:listSelector="@color/transparent" -->
+        <!-- android:scrollbars="none" > -->
+        <!-- </ExpandableListView> -->
+
+        <lib.pulltorefresh.PullToRefreshListView
+            android:id="@+id/elv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@null"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrHeaderTextColor="@android:color/darker_gray"
+            ptr:ptrMode="both" >
+        </lib.pulltorefresh.PullToRefreshListView>
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/iv_pinyin" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:layout_alignParentRight="true" -->
+        <!-- android:background="@drawable/pinyin_normal" -->
+        <!-- android:clickable="true" -->
+        <!-- android:focusable="true" -->
+        <!-- android:focusableInTouchMode="true" -->
+        <!-- android:paddingLeft="10dp" -->
+        <!-- android:paddingRight="10dp" /> -->
+    </RelativeLayout>
+
+    <com.epeisong.base.view.IndexBar
+        android:id="@+id/bar"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

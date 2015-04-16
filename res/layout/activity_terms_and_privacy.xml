@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="30dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="易配送软件许可及服务协议"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:text="一、协议的范围"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:text="1.1 协议适用主体范围"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:text="本协议是您与易配送之间关于您下载、安装、使用、复制本软件，以及使用易配送相关服务所订立的协议。"
+            android:textSize="18sp" />
+        
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:text="1.2 协议关系及冲条款"
+            android:textSize="18sp" />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:text="本协议内容可能不断的发布关于本服务的相关协议、业务规则等内容。上述内容一经正事发布，即为本协议不可分割的部分，您同样应当遵守。"
+            android:textSize="18sp" />
+        
+         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:text="二、关于本服务"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+         
+          <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:text="1.1 协议使用主题范围"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+          <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:text="本协议是您与易配送之间关于您下载、安装、使用、复制本软件。（正文完）"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</ScrollView>

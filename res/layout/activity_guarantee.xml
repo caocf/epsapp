@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/open_wallet_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:padding="15dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="总担保账户金额"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingTop="20dp"
+                android:text="500000元"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/text_noyes" />
+
+        <RelativeLayout
+            android:id="@+id/ll_childnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0.1dp"
+            android:layout_marginRight="0.1dp"
+            android:background="@drawable/selector_item_white_gray"
+            android:orientation="horizontal"
+            android:padding="18dp" >
+
+            <TextView
+                android:id="@+id/tv_chib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="20dp"
+                android:text="子账户："
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_chib"
+                android:text="538个"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/iv_arrow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon_arrow_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/text_noyes" />
+
+        <RelativeLayout
+            android:id="@+id/ll_usenum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0.1dp"
+            android:layout_marginRight="0.1dp"
+            android:background="@drawable/selector_item_white_gray"
+            android:orientation="horizontal"
+            android:padding="18dp" >
+
+            <TextView
+                android:id="@+id/tv_useb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="20dp"
+                android:text="可用金额："
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_useb"
+                android:text="300元"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/iv_arrow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon_arrow_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/text_noyes" />
+
+        <RelativeLayout
+            android:id="@+id/ll_frenum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0.1dp"
+            android:layout_marginRight="0.1dp"
+            android:background="@drawable/selector_item_white_gray"
+            android:orientation="horizontal"
+            android:padding="18dp" >
+
+            <TextView
+                android:id="@+id/tv_refb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="20dp"
+                android:text="冻结金额："
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_refb"
+                android:text="120000元"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/iv_arrow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon_arrow_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/text_noyes" />
+
+        <LinearLayout
+            android:id="@+id/ll_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0.1dp"
+            android:layout_marginRight="0.1dp"
+            android:background="@drawable/selector_item_white_gray"
+            android:orientation="horizontal"
+            android:padding="17dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="查看担保账户明细"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/iv_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_arrow_right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/text_noyes" />
+    </LinearLayout>
+
+</LinearLayout>

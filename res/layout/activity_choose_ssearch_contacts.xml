@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/contacts_search"
+        android:paddingLeft="10dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="3dp"
+            android:src="@drawable/place_locate_search" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_search"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:hint="搜索"
+                android:singleLine="true"
+                android:textColor="@color/light_gray" >
+            </EditText>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_tag_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_search"
+        android:layout_margin="15dp"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="通过标签筛选"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <com.epeisong.base.view.FlowTextLayout
+                android:id="@+id/ftl_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/view_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_top"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="通过类别筛选"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <com.epeisong.base.view.FlowTextLayout_old
+                android:id="@+id/ftl_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_tag_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_search"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" >
+
+        <View
+            android:id="@+id/view_tag_top"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_line"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <ListView
+            android:id="@+id/search_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/view_tag_top"
+            android:divider="@null"
+            android:overScrollMode="never"
+            android:scrollbars="vertical" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/tv_search_nothing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="40dp"
+            android:text="没有搜到任何联系人"
+            android:textColor="#647488"
+            android:textSize="17sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_selectbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true" >
+
+        <CheckBox
+            android:id="@+id/cb_selectall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_selectall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="全选" />
+
+        <Button
+            android:id="@+id/bt_selectok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@android:color/transparent"
+
+            android:layout_marginRight="20dp"
+            android:text="确定(0)" />
+
+        <TextView
+            android:id="@+id/tv_selectinverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="反选" />
+
+        <CheckBox
+            android:id="@+id/cb_selectinverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+</RelativeLayout>

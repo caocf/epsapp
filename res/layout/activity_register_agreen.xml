@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1  总则"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1.1  用户应当同意本协议的条款并按照页面上的提示完成全部的注册程序。用户在进行注册程序过程中点击“注册”按钮即表示用户与南京易配送公司（以下简称：易配送）达成协议，完全接受本协议项下的全部条款。\n1.2  用户注册成功后，易配送将给予每个用户一个用户帐号及相应的密码，该用户帐号和密码由用户负责保管；用户应当对以其用户帐号进行的所有活动和事件负法律责任。\n1.3  用户一经注册易配送帐号，除非单项服务要求单独开通权限，用户有权利用该账号使用易配送各单项服务，当用户使用易配送各单项服务时，用户的使用行为视为其对该单项服务的服务条款以及易配送在该单项服务中发出的各类公告的同意。\n1.4  易配送用户协议以及各单项服务条款和公告可由易配送公司随时更新，且无需另行通知。您在使用相关服务时,应关注并遵守其所适用的相关条款。\n\t您在使用易配送提供的各项服务之前，应仔细阅读本用户协议。如您不同意本用户协议及/或随时对其的修改，您可以主动取消易配送提供的服务；您一旦使用易配送服务，即视为您已了解并完全同意本用户协议各项内容，包括易配送对用户协议随时所做的任何修改，并成为易配送用户。 "
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2  注册信息和隐私保护"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2.1  易配送帐号（即易配送用户ID）的所有权归易配送，用户完成注册申请手续后，获得易配送帐号的使用权。用户应提供及时、详尽及准确的个人资料，并不断更新注册资料，符合及时、详尽准确的要求。所有原始输入的资料将引用为注册资料。如果因注册信息不真实而引起的问题，并对问题发生所带来的后果，易配送不负任何责任。\n2.2  用户不应将其帐号、密码转让、出售或出借予他人使用，若用户授权他人使用账户，应对被授权人在该账户下发生所有行为负全部责任。若您发现您的账号遭他人非法使用，应立即通知易配送。互联网上不排除因黑客行为或用户的保管疏忽导致账号、密码遭他人非法使用，此类情况与易配送无关。\n2.3  在用户使用易配送产品过程中，易配送会获取有关用户使用情况的日志信息、系统信息以及Cookie。易配送会使用这些信息，对产品的使用情况进行统计；为用户提供个性化的服务；与合作伙伴共同向用户提供用户所要求的服务或展示用户感兴趣的内容。\n2.4  易配送非常重视信息安全，应用多种安全技术，通过严格的措施努力保护用户的信息不被未经授权的访问、使用或泄露。在如下的情况，易配送可能会披露用户的信息：①事先获得用户本人的授权；②用户使用共享功能；③根据法律、法规、法律程序的要求或政府主管部门的强制性要求；④以学术研究或公共利益为目的；⑤为维护易配送的合法权益，例如查找、预防、处理欺诈或安全等方面的问题；⑥符合相关服务条款或用户协议的规定。"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3  使用规则"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3.1　用户在使用易配送服务时，必须遵守中华人民共和国相关法律法规的规定，用户应同意将不会利用本服务进行任何违法或不正当的活动，包括但不限于下列行为∶\n3.1.1  上载、展示、张贴、传播或以其它方式传送含有下列内容之一的信息：\n①反对宪法所确定的基本原则的；②危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；③损害国家荣誉和利益的；④煽动民族仇恨、民族歧视、破坏民族团结的；⑤破坏国家宗教政策，宣扬邪教和封建迷信的；⑥散布谣言，扰乱社会秩序，破坏社会稳定的；⑦散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；⑧侮辱或者诽谤他人，侵害他人合法权利的；⑨含有虚假、有害、胁迫、侵害他人隐私、骚扰、侵害、中伤、粗俗、猥亵、或其它道德上令人反感的内容；⑩含有中国法律、法规、规章、条例以及任何具有法律效力之规范所限制或禁止的其它内容的。\n 3.1.2  不得为任何非法目的而使用网络服务系统；\n 3.1.3  不利用易配送服务从事以下活动：\n①未经允许，进入计算机信息网络或者使用计算机信息网络资源的；②未经允许，对计算机信息网络功能进行删除、修改或者增加的；③未经允许，对进入计算机信息网络中存储、处理或者传输的数据和应用程序进行删除、修改或者增加的；④故意制作、传播计算机病毒等破坏性程序的；⑤其他危害计算机信息网络安全的行为。\n3.2  用户违反本协议或相关的服务条款的规定，导致或产生的任何第三方主张的任何索赔、要求或损失，包括合理的律师费，用户同意赔偿易配送与合作公司、关联公司，并使之免受损害。对此，易配送有权视用户的行为性质，采取包括但不限于删除用户发布信息内容、暂停使用许可、终止服务、限制使用、回收易配送帐号、追究法律责任等措施。对恶意注册易配送帐号或利用易配送帐号进行违法活动、捣乱、骚扰、欺骗、其他用户以及其他违反本协议的行为，易配送有权回收其帐号。同时，易配送公司会视司法部门的要求，协助调查。\n3.3  用户不得对本服务任何部分或本服务之使用或获得，进行复制、拷贝、出售、转售或用于任何其它商业目的。\n3.4  用户须对自己在使用易配送服务过程中的行为承担法律责任。用户承担法律责任的形式包括但不限于：对受到侵害者进行赔偿，以及在易配送公司首先承担了因用户行为导致的行政处罚或侵权损害赔偿责任后，用户应给予易配送公司等额的赔偿。"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4  服务内容"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4.1  易配送网络服务的具体内容由易配送根据实际情况提供。\n4.2  除非本服务协议另有其它明示规定，易配送所推出的新产品、新功能、新服务，均受到本服务协议之规范。\n4.3  为使用本服务，用户必须能够自行经有法律资格对您提供互联网接入服务的第三方，进入国际互联网，并应自行支付相关服务费用。此外，您必须自行配备及负责与国际联网连线所需之一切必要装备，包括手机、计算机或其它存取装置。\n4.4  鉴于网络服务的特殊性，用户同意易配送有权不经事先通知，随时变更、中断或终止部分或全部的网络服务（包括收费网络服务）。易配送不担保网络服务不会中断，对网络服务的及时性、安全性、准确性也都不作担保。\n4.5  易配送需要定期或不定期地对提供网络服务的平台或相关的设备进行检修或者维护，如因此类情况而造成网络服务（包括收费网络服务）在合理时间内的中断，易配送无需为此承担任何责任。易配送保留不经事先通知为维修保养、升级或其它目的暂停本服务任何部分的权利。\n4.6  用户明确同意其使用易配送网络服务所存在的风险将完全由其自己承担。用户理解并接受下载或通过易配送服务取得的任何信息资料取决于用户自己，并由其承担系统受损、资料丢失以及其它任何风险。\n4.7  易配送有权于任何时间暂时或永久修改或终止本服务（或其任何部分），而无论其通知与否，易配送对用户和任何第三人均无需承担任何责任。\n4.8  终止服务。用户同意易配送基于其自行之考虑，因任何理由，包含但不限于长时间未使用，或易配送认为用户已经违反本用户协议的文字及精神，终止用户的密码、帐号或本服务之使用（或服务之任何部分），并将用户在本服务内任何内容加以移除并删除。用户同意依本用户协议规定所提供的本服务，无需进行事先通知即可中断或终止，用户承认并同意，易配送可立即关闭或删除用户帐号及帐号中所有相关信息及文件，及/或禁止继续使用前述文件或本服务。此外，用户同意若本服务之使用被中断或终止或用户帐号及相关信息和文件被关闭或删除，易配送对用户或任何第三人均不承担任何责任。"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5  其他"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5.1  本协议的订立、执行和解释及争议的解决均应适用中华人民共和国法律。\n5.2  如双方就本协议内容或其执行发生任何争议，双方应尽量友好协商解决；协商不成时，任何一方均可向易配送所在地的人民法院提起诉讼。\n5.3  易配送未行使或执行本服务协议任何权利或规定，不构成对前述权利或权利之放弃。\n5.4  如本协议中的任何条款无论因何种原因完全或部分无效或不具有执行力，本协议的其余条款仍应有效并且有约束力。\n\t请您在发现任何违反本用户协议以及其他任何单项服务的服务条款、易配送各类公告之情形时，通知易配送。您可以通过如下联络方式同易配送联系：\n\t中国江苏省南京市雨花台区花神大道23号3栋309室\n\t邮政编码：210012"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

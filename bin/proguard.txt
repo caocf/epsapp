@@ -1,0 +1,763 @@
+# view res/layout/activity_main.xml #generated:25
+# view res/layout/one_chat_view.xml #generated:87
+# view res/layout/one_tab_text_viewpager.xml #generated:14
+# view res/layout/one_tab_text_viewpager_2.xml #generated:23
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:337
+-keep class com.alipay.sdk.app.H5PayActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:343
+-keep class com.alipay.sdk.auth.AuthActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:56
+-keep class com.baidu.location.f { <init>(...); }
+
+# view AndroidManifest.xml #generated:288
+-keep class com.bdmap.impl.FixedLocActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:287
+-keep class com.bdmap.impl.MyLocActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:289
+-keep class com.bdmap.impl.NearByLogisticsMapActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:44
+-keep class com.epeisong.EpsApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:100
+-keep class com.epeisong.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:99
+-keep class com.epeisong.MainActivity_old { <init>(...); }
+
+# view AndroidManifest.xml #generated:329
+-keep class com.epeisong.base.activity.ShowImagesActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:221
+-keep class com.epeisong.base.dialog.ChooseLineActivity { <init>(...); }
+
+# view res/layout/activity_consulting_to_help.xml #generated:24
+# view res/layout/activity_wallet_new_guarantee.xml #generated:284
+-keep class com.epeisong.base.view.AdjustHeightExpandableListView { <init>(...); }
+
+# view res/layout/activity_choose_role.xml #generated:12
+# view res/layout/activity_my_car_source.xml #generated:285
+# view res/layout/activity_my_supply_details.xml #generated:281
+# view res/layout/activity_notice.xml #generated:13
+# view res/layout/activity_notice_or_relay.xml #generated:13
+# view res/layout/activity_other_car_source.xml #generated:208
+# view res/layout/activity_other_supply_details.xml #generated:250
+# view res/layout/activity_personal_info.xml #generated:60
+# view res/layout/dialog_usertype.xml #generated:20
+# view res/layout/fragment_contacts_info.xml #generated:153
+# view res/layout/fragment_home.xml #generated:74
+-keep class com.epeisong.base.view.AdjustHeightGridView { <init>(...); }
+
+# view res/layout/activity_payment_select.xml #generated:194
+# view res/layout/activity_product_manage.xml #generated:375
+# view res/layout/activity_wallet_bank.xml #generated:25
+# view res/layout/activity_wallet_recharge.xml #generated:108
+-keep class com.epeisong.base.view.AdjustHeightListView { <init>(...); }
+
+# view res/layout/base_activity_layout.xml #generated:9
+-keep class com.epeisong.base.view.CustomTitle { <init>(...); }
+
+# view res/layout/activity_cargood_source.xml #generated:82
+# view res/layout/activity_index_info.xml #generated:40
+# view res/layout/activity_net_info.xml #generated:19
+# view res/layout/activity_order_info.xml #generated:77
+# view res/layout/activity_vertical_filter_layout.xml #generated:7
+-keep class com.epeisong.base.view.EndlessEmptyListView { <init>(...); }
+
+# view res/layout/activity_choose_search_contacts.xml #generated:73
+# view res/layout/activity_choose_ssearch_contacts.xml #generated:73
+# view res/layout/activity_edit_tag.xml #generated:24
+# view res/layout/activity_edit_tag.xml #generated:72
+-keep class com.epeisong.base.view.FlowTextLayout { <init>(...); }
+
+# view res/layout/activity_choose_search_contacts.xml #generated:100
+# view res/layout/activity_choose_search_contacts_old.xml #generated:101
+# view res/layout/activity_choose_search_contacts_old.xml #generated:128
+# view res/layout/activity_choose_ssearch_contacts.xml #generated:100
+-keep class com.epeisong.base.view.FlowTextLayout_old { <init>(...); }
+
+# view res/layout/activity_choose_contacts.xml #generated:17
+# view res/layout/activity_choose_contactsinfo.xml #generated:20
+# view res/layout/activity_choose_region.xml #generated:50
+# view res/layout/activity_choose_specificcontacts.xml #generated:21
+# view res/layout/fragment_contacts.xml #generated:64
+# view res/layout/fragment_members.xml #generated:174
+-keep class com.epeisong.base.view.IndexBar { <init>(...); }
+
+# view res/layout/activity_wallet_recharge.xml #generated:62
+# view res/layout/activity_wallet_withdrawal.xml #generated:78
+-keep class com.epeisong.base.view.MoneyEditText { <init>(...); }
+
+# view res/layout/activity_choose_members_item.xml #generated:69
+# view res/layout/activity_guarantee_list.xml #generated:52
+# view res/layout/activity_manage_user_detail.xml #generated:277
+# view res/layout/activity_wallet_guaratee_item.xml #generated:46
+# view res/layout/item_black_board.xml #generated:100
+-keep class com.epeisong.base.view.SlipButton { <init>(...); }
+
+# view res/layout/fragment_dispatch.xml #generated:20
+-keep class com.epeisong.base.view.TabBrowser { <init>(...); }
+
+# view res/layout/one_tab_text_viewpager.xml #generated:7
+-keep class com.epeisong.base.view.TabViewsText { <init>(...); }
+
+# view res/layout/one_chat_view.xml #generated:96
+-keep class com.epeisong.base.view.indicator.CirclePageIndicator { <init>(...); }
+
+# view res/layout/fragment_info_fee.xml #generated:138
+-keep class com.epeisong.base.view.statusview.StatusLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:351
+-keep class com.epeisong.service.CoreService { <init>(...); }
+
+# view AndroidManifest.xml #generated:356
+-keep class com.epeisong.service.notify.NotifyService { <init>(...); }
+
+# view AndroidManifest.xml #generated:317
+-keep class com.epeisong.service.receiver.AlarmBroadcastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:318
+-keep class com.epeisong.service.receiver.SysReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:166
+-keep class com.epeisong.ui.activity.AccountAndSecureCenter { <init>(...); }
+
+# view AndroidManifest.xml #generated:167
+-keep class com.epeisong.ui.activity.AccountInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:279
+-keep class com.epeisong.ui.activity.AddQuoteActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:151
+-keep class com.epeisong.ui.activity.AddServiceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:110
+-keep class com.epeisong.ui.activity.BlackBoardActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:175
+-keep class com.epeisong.ui.activity.BlackBoardOtherActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:144
+-keep class com.epeisong.ui.activity.BlacklistActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:125
+-keep class com.epeisong.ui.activity.BulletinDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:218
+-keep class com.epeisong.ui.activity.BulletinListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:153
+-keep class com.epeisong.ui.activity.CarSourceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:230
+-keep class com.epeisong.ui.activity.ChangeLoginPwdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:267
+-keep class com.epeisong.ui.activity.ChangePasswordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:233
+-keep class com.epeisong.ui.activity.ChangePhoneActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:270
+-keep class com.epeisong.ui.activity.ChangeTelephoneNumberActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:140
+-keep class com.epeisong.ui.activity.ChatRoomActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:121
+-keep class com.epeisong.ui.activity.ChooseContactsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:122
+-keep class com.epeisong.ui.activity.ChooseNewContactsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:194
+-keep class com.epeisong.ui.activity.ChooseRegionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:197
+-keep class com.epeisong.ui.activity.ChooseRegionSearchActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:281
+-keep class com.epeisong.ui.activity.ChooseSSearchContactsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:123
+-keep class com.epeisong.ui.activity.ChooseSearchContactsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:280
+-keep class com.epeisong.ui.activity.ChooseSpecificContactsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:219
+-keep class com.epeisong.ui.activity.CommonSetupActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:132
+-keep class com.epeisong.ui.activity.ComplaintActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:253
+-keep class com.epeisong.ui.activity.ComplaintDealDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:247
+-keep class com.epeisong.ui.activity.ComplaintHandlingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:249
+-keep class com.epeisong.ui.activity.ComplaintRecordDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:163
+-keep class com.epeisong.ui.activity.ConsultingToHelpActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:156
+-keep class com.epeisong.ui.activity.ContactsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:182
+-keep class com.epeisong.ui.activity.ContactsDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:148
+-keep class com.epeisong.ui.activity.ContactsInfoActivity_old { <init>(...); }
+
+# view AndroidManifest.xml #generated:216
+-keep class com.epeisong.ui.activity.CourierActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:217
+-keep class com.epeisong.ui.activity.CourierDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:251
+-keep class com.epeisong.ui.activity.CustomerAddUserActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:184
+-keep class com.epeisong.ui.activity.CustomerComplaintActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:243
+-keep class com.epeisong.ui.activity.CustomerProblemActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:245
+-keep class com.epeisong.ui.activity.CustomerProblemDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:111
+-keep class com.epeisong.ui.activity.DealBillActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:112
+-keep class com.epeisong.ui.activity.DealBillDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:191
+-keep class com.epeisong.ui.activity.EditAddressActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:185
+-keep class com.epeisong.ui.activity.EditOtherAddressActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:283
+-keep class com.epeisong.ui.activity.EditTagActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:174
+-keep class com.epeisong.ui.activity.EntireVehicleActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:173
+-keep class com.epeisong.ui.activity.EntireVehicleActivity_old { <init>(...); }
+
+# view AndroidManifest.xml #generated:176
+-keep class com.epeisong.ui.activity.EntireVehicleDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:165
+-keep class com.epeisong.ui.activity.EpeisongPlatformActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:208
+-keep class com.epeisong.ui.activity.EquipmentDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:207
+-keep class com.epeisong.ui.activity.EquipmentLeasingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:145
+-keep class com.epeisong.ui.activity.FansActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:272
+-keep class com.epeisong.ui.activity.FastFindingTheCarLookingForGoodsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:118
+-keep class com.epeisong.ui.activity.FindActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:179
+-keep class com.epeisong.ui.activity.FmsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:231
+-keep class com.epeisong.ui.activity.ForgetLoginPwdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:269
+-keep class com.epeisong.ui.activity.ForgetPasswordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:268
+-keep class com.epeisong.ui.activity.ForgetPasswordActivity_ { <init>(...); }
+
+# view AndroidManifest.xml #generated:306
+-keep class com.epeisong.ui.activity.FreezeWalletActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:154
+-keep class com.epeisong.ui.activity.FreightDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:116
+-keep class com.epeisong.ui.activity.FreightForwardDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:109
+-keep class com.epeisong.ui.activity.FreightMarketDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:115
+-keep class com.epeisong.ui.activity.FreightMineDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:161
+-keep class com.epeisong.ui.activity.FreightOfContactsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:160
+-keep class com.epeisong.ui.activity.FreightOfContactsActivity_old { <init>(...); }
+
+# view AndroidManifest.xml #generated:117
+-keep class com.epeisong.ui.activity.FreighthDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:133
+-keep class com.epeisong.ui.activity.GuaCompDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:134
+-keep class com.epeisong.ui.activity.GuaCompResultActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:308
+-keep class com.epeisong.ui.activity.GuaranteeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:307
+-keep class com.epeisong.ui.activity.GuaranteeIntroActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:130
+-keep class com.epeisong.ui.activity.InMarketActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:226
+-keep class com.epeisong.ui.activity.InfoFeeDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:225
+-keep class com.epeisong.ui.activity.InfoFeeListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:131
+-keep class com.epeisong.ui.activity.InfoScreenActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:180
+-keep class com.epeisong.ui.activity.InsuranceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:177
+-keep class com.epeisong.ui.activity.LclActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:178
+-keep class com.epeisong.ui.activity.LclDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:232
+-keep class com.epeisong.ui.activity.LoginFreezeAccountActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:89
+-keep class com.epeisong.ui.activity.LoginOtherProblemActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:311
+-keep class com.epeisong.ui.activity.ManaAddUserActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:313
+-keep class com.epeisong.ui.activity.ManaManaUserActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:314
+-keep class com.epeisong.ui.activity.ManaUserDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:312
+-keep class com.epeisong.ui.activity.ManageAddUserActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:261
+-keep class com.epeisong.ui.activity.ManageInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:262
+-keep class com.epeisong.ui.activity.ManageMemberActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:263
+-keep class com.epeisong.ui.activity.ManageScreenActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:257
+-keep class com.epeisong.ui.activity.MarketManageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:205
+-keep class com.epeisong.ui.activity.MarketOfFreightActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:126
+-keep class com.epeisong.ui.activity.MarketOfFreightSearchActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:256
+-keep class com.epeisong.ui.activity.MemberManagerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:282
+-keep class com.epeisong.ui.activity.MineBillDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:220
+-keep class com.epeisong.ui.activity.MineCEActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:168
+-keep class com.epeisong.ui.activity.MineDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:172
+-keep class com.epeisong.ui.activity.MinePrivacyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:169
+-keep class com.epeisong.ui.activity.MineQrCodeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:170
+-keep class com.epeisong.ui.activity.MineQuoteActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:277
+-keep class com.epeisong.ui.activity.MinetoMeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:278
+-keep class com.epeisong.ui.activity.MinetoOtherActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:209
+-keep class com.epeisong.ui.activity.MoreActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:214
+-keep class com.epeisong.ui.activity.MoveHouseActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:215
+-keep class com.epeisong.ui.activity.MoveHouseDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:266
+-keep class com.epeisong.ui.activity.MyCarSourceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:206
+-keep class com.epeisong.ui.activity.MySupplyDetailsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:284
+-keep class com.epeisong.ui.activity.NearByLogisticsListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:119
+-keep class com.epeisong.ui.activity.NearbyMarketActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:260
+-keep class com.epeisong.ui.activity.NewMembersActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:124
+-keep class com.epeisong.ui.activity.NoticeOrRelayActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:171
+-keep class com.epeisong.ui.activity.NotifySetupActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:304
+-keep class com.epeisong.ui.activity.OpenWalletActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:265
+-keep class com.epeisong.ui.activity.OtherCarSourceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:264
+-keep class com.epeisong.ui.activity.OtherSupplyDetailsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:212
+-keep class com.epeisong.ui.activity.PackagingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:213
+-keep class com.epeisong.ui.activity.PackagingDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:135
+-keep class com.epeisong.ui.activity.PaymentActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:305
+-keep class com.epeisong.ui.activity.PaymentSecurity { <init>(...); }
+
+# view AndroidManifest.xml #generated:229
+-keep class com.epeisong.ui.activity.PaymentSelectActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:149
+-keep class com.epeisong.ui.activity.PersonalInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:150
+-keep class com.epeisong.ui.activity.PersonalInfoEditActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:120
+-keep class com.epeisong.ui.activity.PhoneContactsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:290
+-keep class com.epeisong.ui.activity.PoiSearchActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:183
+-keep class com.epeisong.ui.activity.ProductDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:136
+-keep class com.epeisong.ui.activity.ProductManaActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:104
+-keep class com.epeisong.ui.activity.PublishBulletinActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:114
+-keep class com.epeisong.ui.activity.PublishGoodsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:113
+-keep class com.epeisong.ui.activity.PublishTruckActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:146
+-keep class com.epeisong.ui.activity.SearchContactsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:224
+-keep class com.epeisong.ui.activity.SearchFollowActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:155
+-keep class com.epeisong.ui.activity.SearchFreightActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:159
+-keep class com.epeisong.ui.activity.SearchFreightDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:162
+-keep class com.epeisong.ui.activity.SearchTheSourceSupplyOCarsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:147
+-keep class com.epeisong.ui.activity.SearchUserDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:164
+-keep class com.epeisong.ui.activity.SecurityCenterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:128
+-keep class com.epeisong.ui.activity.SetGetGoodsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:276
+-keep class com.epeisong.ui.activity.SetPassWordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:188
+-keep class com.epeisong.ui.activity.SimpleEditActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:181
+-keep class com.epeisong.ui.activity.StationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:210
+-keep class com.epeisong.ui.activity.StorageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:211
+-keep class com.epeisong.ui.activity.StorageDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:152
+-keep class com.epeisong.ui.activity.SupplyDetailsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:273
+-keep class com.epeisong.ui.activity.TermsAndPrivacyActivtiy { <init>(...); }
+
+# view AndroidManifest.xml #generated:274
+-keep class com.epeisong.ui.activity.TheNewVersionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:143
+-keep class com.epeisong.ui.activity.TradeBoxActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:139
+-keep class com.epeisong.ui.activity.TradeManaActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:235
+-keep class com.epeisong.ui.activity.TransferWithdrawalActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:237
+-keep class com.epeisong.ui.activity.TransferWithdrawalDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:275
+-keep class com.epeisong.ui.activity.TruckGoodsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:129
+-keep class com.epeisong.ui.activity.VechileInforActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:271
+-keep class com.epeisong.ui.activity.VerificationCodeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:295
+-keep class com.epeisong.ui.activity.WalletActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:298
+-keep class com.epeisong.ui.activity.WalletAddBankActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:296
+-keep class com.epeisong.ui.activity.WalletAgreenActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:297
+-keep class com.epeisong.ui.activity.WalletBankActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:310
+-keep class com.epeisong.ui.activity.WalletDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:299
+-keep class com.epeisong.ui.activity.WalletGuaranteeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:309
+-keep class com.epeisong.ui.activity.WalletGuarateeDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:300
+-keep class com.epeisong.ui.activity.WalletPersonalInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:301
+-keep class com.epeisong.ui.activity.WalletRechargeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:302
+-keep class com.epeisong.ui.activity.WalletWithdrawalActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:303
+-keep class com.epeisong.ui.activity.WalletWithdrawalfActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:236
+-keep class com.epeisong.ui.activity.WithdrawalActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:239
+-keep class com.epeisong.ui.activity.WithdrawalDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:241
+-keep class com.epeisong.ui.activity.WithdrawalTaskActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:79
+-keep class com.epeisong.ui.activity.temp.ChooseRoleActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:80
+-keep class com.epeisong.ui.activity.temp.ChooseRoleActivityNew { <init>(...); }
+
+# view AndroidManifest.xml #generated:88
+-keep class com.epeisong.ui.activity.temp.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class com.epeisong.ui.activity.temp.RegisterAgreenActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:74
+-keep class com.epeisong.ui.activity.temp.RegisterStartActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:84
+-keep class com.epeisong.ui.activity.temp.SetupAccountInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:76
+-keep class com.epeisong.ui.activity.temp.SetupPwdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:85
+-keep class com.epeisong.ui.activity.temp.SetupRoleInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:81
+-keep class com.epeisong.ui.activity.temp.SetupRoleInfoActivityNew { <init>(...); }
+
+# view AndroidManifest.xml #generated:62
+-keep class com.epeisong.ui.activity.user.LoadingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:92
+-keep class com.epeisong.ui.activity.user.LoginBySavedPhoneActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:95
+-keep class com.epeisong.ui.activity.user.RegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:96
+-keep class com.epeisong.ui.activity.user.RegisterCodeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:97
+-keep class com.epeisong.ui.activity.user.RegisterPwdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:98
+-keep class com.epeisong.ui.activity.user.UserLoginedInitActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:71
+-keep class com.epeisong.ui.activity.user.WelcomeActivity { <init>(...); }
+
+# view res/layout/activity_cargood_source.xml #generated:119
+# view res/layout/activity_freight_of_contacts.xml #generated:68
+# view res/layout/activity_index_info.xml #generated:74
+# view res/layout/activity_info_screen.xml #generated:93
+# view res/layout/activity_search_market_conditions.xml #generated:96
+# view res/layout/activity_search_the_source_supply_of_cars.xml #generated:92
+-keep class com.epeisong.ui.view.ChooseFreightTypeLayout { <init>(...); }
+
+# view res/layout/activity_cargood_source.xml #generated:113
+# view res/layout/activity_freight_of_contacts.xml #generated:62
+# view res/layout/activity_index_info.xml #generated:68
+# view res/layout/activity_info_screen.xml #generated:87
+# view res/layout/activity_order_info.xml #generated:106
+# view res/layout/activity_search_market_conditions.xml #generated:90
+# view res/layout/activity_search_the_source_supply_of_cars.xml #generated:86
+# view res/layout/activity_stowage_info.xml #generated:143
+-keep class com.epeisong.ui.view.ChooseLineLayout { <init>(...); }
+
+# view res/layout/activity_login_by_saved_phone.xml #generated:2
+-keep class com.epeisong.ui.view.OnResizeLinearLayout { <init>(...); }
+
+# view res/layout/fragment_chat_room.xml #generated:7
+-keep class com.epeisong.ui.view.RecordChatView { <init>(...); }
+
+# view res/layout/activity_choose_contacts_item.xml #generated:15
+# view res/layout/activity_choose_members_item.xml #generated:16
+# view res/layout/activity_new_members_item.xml #generated:11
+# view res/layout/chat_msg_view_left.xml #generated:20
+# view res/layout/chat_msg_view_right.xml #generated:20
+# view res/layout/fragment_common_msg_item.xml #generated:17
+# view res/layout/fragment_mine_head.xml #generated:16
+# view res/layout/item_contacts_head.xml #generated:8
+# view res/layout/item_members_head.xml #generated:7
+# view res/layout/item_notice_or_relay_contacts.xml #generated:11
+# view res/layout/item_search_market.xml #generated:21
+-keep class com.epeisong.ui.view.RoundImageView { <init>(...); }
+
+# view res/layout/activity_account_info.xml #generated:88
+# view res/layout/activity_choose_role.xml #generated:71
+# view res/layout/activity_my_car_source.xml #generated:184
+# view res/layout/activity_my_supply_details.xml #generated:180
+# view res/layout/activity_notify_setup_item.xml #generated:17
+# view res/layout/activity_notifysetup.xml #generated:107
+# view res/layout/activity_notifysetup.xml #generated:133
+# view res/layout/activity_notifysetup.xml #generated:174
+# view res/layout/activity_notifysetup.xml #generated:217
+# view res/layout/activity_notifysetup.xml #generated:40
+# view res/layout/activity_notifysetup.xml #generated:66
+# view res/layout/activity_publish_goods.xml #generated:330
+# view res/layout/activity_publish_truck.xml #generated:272
+# view res/layout/fragment_mine_account.xml #generated:84
+# view res/layout/fragment_mine_business_bottom.xml #generated:215
+-keep class com.epeisong.ui.view.SwitchButton { <init>(...); }
+
+# view AndroidManifest.xml #generated:201
+-keep class com.test.log.CrashLogDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:200
+-keep class com.test.log.CrashLogListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:202
+-keep class com.test.log.LogcatActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:361
+-keep class com.test.log.LogcatService { <init>(...); }
+
+# view AndroidManifest.xml #generated:331
+-keep class com.test.other.MoreFunctionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:332
+-keep class com.test.other.baidu_lbs.BaiduLocTestActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:333
+-keep class com.test.other.baidu_lbs.BaiduMapTestActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:334
+-keep class com.test.other.baidu_lbs.BaiduPoiTestActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:330
+-keep class com.test.request.RequestTestActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:203
+-keep class com.zxing.CaptureActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:204
+-keep class com.zxing.CaptureResultActivity { <init>(...); }
+
+# view res/layout/zxing.xml #generated:16
+-keep class com.zxing.view.ViewfinderView { <init>(...); }
+
+# view res/layout/activity_black_borad.xml #generated:21
+# view res/layout/activity_complaint_detail.xml #generated:63
+# view res/layout/activity_deal_bill.xml #generated:9
+# view res/layout/activity_info_screen.xml #generated:68
+# view res/layout/activity_minetoother_bill.xml #generated:9
+# view res/layout/activity_publish_bulletin.xml #generated:53
+# view res/layout/activity_search_market.xml #generated:35
+# view res/layout/activity_search_market_conditions.xml #generated:66
+# view res/layout/activity_stowage_info.xml #generated:114
+# view res/layout/activity_wallet_guaratee_manager.xml #generated:94
+# view res/layout/fragment_chat_room.xml #generated:21
+# view res/layout/fragment_members.xml #generated:148
+# view res/layout/one_ptr_listview.xml #generated:2
+# view res/layout/one_ptr_listview_with_fastbar.xml #generated:14
+-keep class lib.pulltorefresh.PullToRefreshListView { <init>(...); }
+
+# view res/layout/activity_tasknew.xml #generated:10
+# view res/layout/activity_tasknew1.xml #generated:10
+# view res/layout/fragment_order.xml #generated:10
+-keep class lib.pulltorefresh.PullToRefreshScrollView { <init>(...); }
+

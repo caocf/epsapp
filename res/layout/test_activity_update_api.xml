@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_update_entire_vehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="entire_vehicle" />
+
+    <Button
+        android:id="@+id/btn_update_lcl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lcl" />
+
+    <Button
+        android:id="@+id/btn_update_fms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fms" />
+
+    <Button
+        android:id="@+id/btn_update_insurance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="insurance" />
+
+    <Button
+        android:id="@+id/btn_update_station"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="station" />
+
+    <Button
+        android:id="@+id/btn_update_equip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="equip" />
+
+    <Button
+        android:id="@+id/btn_update_storage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="storage" />
+
+    <Button
+        android:id="@+id/btn_update_packaging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="packaging" />
+
+    <Button
+        android:id="@+id/btn_update_movehouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="movehouse" />
+    <Button
+        android:id="@+id/btn_update_courier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="courier" />
+
+</LinearLayout>

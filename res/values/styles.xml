@@ -1,0 +1,176 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.TransActivity" parent="@style/AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- 窗口样式的Activity -->
+    <style name="Theme.FloatActivity" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="tab_text_view">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/selector_tab_text</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- <style name="freight_detail_"></style> -->
+
+    <style name="publish_dispatch_edittext">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="personal_info_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:text">未填写</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/selector_user_info_editable_text_bg</item>
+    </style>
+
+    <!-- 地点定位样式 -->
+    <style name="place_locate_title">
+        <item name="android:textColor">#636d79</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:background">#e3e6eb</item>
+    </style>
+
+    <style name="place_locate_name">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+
+    <!-- 小黑板样式 -->
+    <style name="black_borad_text">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="black_borad_button">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">15dp</item>
+    </style>
+
+    <style name="dialog_progress" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.2</item>
+    </style>
+
+    <style name="popup_window_menu">
+        <item name="@android:windowEnterAnimation">@anim/menu_in</item>
+  //进入时的动画           <item name="@android:windowExitAnimation">@anim/menu_out</item>
+    //退出时的动画   </style>
+
+    <style name="popup_window_menu2">
+        <item name="@android:windowEnterAnimation">@anim/menu_in_left</item>
+  //进入时的动画   
+        <item name="@android:windowExitAnimation">@anim/menu_out_left</item>
+    //退出时的动画   
+</style>
+
+    <!-- 小黑板列表样式，手动声明资源ID -->
+    <item name="ll_borad_bottom" type="id"></item>
+
+    <!-- Activity半透明 -->
+    <style name="activity_half_transparent">
+        <item name="android:windowBackground">@color/half_transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="activity_transparent">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- 列表样式 -->
+    <style name="item">
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <!-- 列表内容样式 -->
+    <style name="item_text">
+        <item name="android:minHeight">23dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- 详情样式 -->
+    <style name="detail">
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <!-- 详情样式 -->
+    <style name="detail_text">
+        <item name="android:minHeight">25dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <style  
+        name="selectorDialog"  
+        parent="@android:style/Theme.Dialog" >  
+        <item name="android:windowFrame">@null</item><!--边框-->  
+<!--         <item name="android:windowIsTranslucent">false</item>半透明   -->
+        <item name="android:windowNoTitle">true</item><!--无标题-->  
+        <item name="android:windowBackground">@color/transparent</item><!--背景透明--> 
+    </style>  
+    
+    <style  
+        name="payDialog"  
+        parent="@android:style/Theme.Dialog">  
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->  
+        <item name="android:windowBackground">@color/white</item><!--背景透明-->
+    </style>  
+ 
+ 
+ 
+
+</resources>

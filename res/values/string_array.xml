@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="spinner_goods_exceed">
+        <item>三不超</item>
+        <item>超长</item>
+        <item>超高</item>
+        <item>超宽</item>
+    </string-array>
+    <string-array name="spinner_goods_type">
+        <item>食品</item>
+        <item>军火</item>
+    </string-array>
+    <string-array name="spinner_truck_meter">
+        <item>8</item>
+        <item>12</item>
+        <item>16</item>
+    </string-array>
+    <string-array name="spinner_truck_type">
+        <item>单机</item>
+        <item>半挂</item>
+        <item>平板</item>
+    </string-array>
+    <string-array name="dispatch_type">
+        <item>全部</item>
+        <item>货源</item>
+        <item>车源</item>
+    </string-array>
+    <string-array name="nearby_place">
+        <item>南京</item>
+    </string-array>
+
+</resources>

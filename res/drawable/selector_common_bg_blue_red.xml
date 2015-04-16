@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:drawable="@drawable/btn_bulletin_down" android:state_selected="true"  android:state_pressed="true"></item>
+    <item android:drawable="@drawable/btn_bulletin" android:state_selected="true"></item>
+    <item android:drawable="@drawable/common_bg_red_pressed" android:state_selected="false" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/common_bg_red_normal" android:state_selected="false"></item>
+
+</selector>

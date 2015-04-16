@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:drawable="@color/transparent"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/chat_msg_audio_right_1"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/chat_msg_audio_right_2"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/chat_msg_audio_right_normal"
+        android:duration="200"/>
+
+</animation-list>

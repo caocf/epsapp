@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2d3037"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/fl_choosable_01"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <include layout="@layout/layout_choosable" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="0.3dp"
+            android:layout_height="match_parent"
+            android:background="#CFCFCF" />
+
+        <FrameLayout
+            android:id="@+id/fl_choosable_02"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <include layout="@layout/layout_choosable" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_market_search_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="搜索"
+        android:textColor="#a93636"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+       
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <lib.pulltorefresh.PullToRefreshListView
+                android:id="@+id/lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/blue_gray"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@null"
+                android:smoothScrollbar="true"
+                ptr:ptrMode="both"
+                ptr:ptrAnimationStyle="flip"
+                ptr:ptrHeaderTextColor="@android:color/darker_gray" >
+            </lib.pulltorefresh.PullToRefreshListView>
+
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_choose_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#55000000"
+            android:padding="10dp"
+            android:visibility="gone" >
+
+            <com.epeisong.ui.view.ChooseLineLayout
+                android:id="@+id/choose_line_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <com.epeisong.ui.view.ChooseFreightTypeLayout
+                android:id="@+id/choose_freight_type_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </FrameLayout>
+    </FrameLayout>
+
+
+</LinearLayout>
+
+

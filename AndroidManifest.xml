@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.epeisong"
+    android:installLocation="auto"
+    android:versionCode="21"
+    android:versionName="1.04.13" >
+
+    <!-- 8 -->
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <application
+        android:name="com.epeisong.EpsApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- 百度key -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="URKaUnmxGHKRwZlLSFqIk9Nk" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <activity
+            android:name="com.epeisong.ui.activity.user.LoadingActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.epeisong.ui.activity.user.WelcomeActivity" />
+
+        <!-- 新的注册流程 -->
+        <activity android:name="com.epeisong.ui.activity.temp.RegisterStartActivity" />
+        <activity android:name="com.epeisong.ui.activity.temp.RegisterAgreenActivity" />
+        <activity
+            android:name="com.epeisong.ui.activity.temp.SetupPwdActivity"
+            android:windowSoftInputMode="stateVisible" />
+        <activity android:name="com.epeisong.ui.activity.temp.ChooseRoleActivity" />
+        <activity android:name="com.epeisong.ui.activity.temp.ChooseRoleActivityNew" />
+        <activity
+            android:name="com.epeisong.ui.activity.temp.SetupRoleInfoActivityNew"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.epeisong.ui.activity.temp.SetupAccountInfoActivity" />
+        <activity
+            android:name="com.epeisong.ui.activity.temp.SetupRoleInfoActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.epeisong.ui.activity.temp.LoginActivity" />
+        <activity android:name="com.epeisong.ui.activity.LoginOtherProblemActivity" />
+
+        <!-- 旧注册流程 -->
+        <activity
+            android:name="com.epeisong.ui.activity.user.LoginBySavedPhoneActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name="com.epeisong.ui.activity.user.RegisterActivity" />
+        <activity android:name="com.epeisong.ui.activity.user.RegisterCodeActivity" />
+        <activity android:name="com.epeisong.ui.activity.user.RegisterPwdActivity" />
+        <activity android:name="com.epeisong.ui.activity.user.UserLoginedInitActivity" />
+        <activity android:name="com.epeisong.MainActivity_old" />
+        <activity
+            android:name="com.epeisong.MainActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.epeisong.ui.activity.PublishBulletinActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity android:name="com.epeisong.ui.activity.FreightMarketDetailActivity" />
+        <activity android:name="com.epeisong.ui.activity.BlackBoardActivity" />
+        <activity android:name="com.epeisong.ui.activity.DealBillActivity" />
+        <activity android:name="com.epeisong.ui.activity.DealBillDetailActivity" />
+        <activity android:name="com.epeisong.ui.activity.PublishTruckActivity" />
+        <activity android:name="com.epeisong.ui.activity.PublishGoodsActivity" />
+        <activity android:name="com.epeisong.ui.activity.FreightMineDetailActivity" />
+        <activity android:name="com.epeisong.ui.activity.FreightForwardDetailActivity" />
+        <activity android:name="com.epeisong.ui.activity.FreighthDetailActivity" />
+        <activity android:name="com.epeisong.ui.activity.FindActivity" />
+        <activity android:name="com.epeisong.ui.activity.NearbyMarketActivity" />
+        <activity android:name="com.epeisong.ui.activity.PhoneContactsActivity" />
+        <activity android:name="com.epeisong.ui.activity.ChooseContactsActivity" />
+        <activity android:name="com.epeisong.ui.activity.ChooseNewContactsActivity" />
+        <activity android:name="com.epeisong.ui.activity.ChooseSearchContactsActivity" />
+        <activity android:name="com.epeisong.ui.activity.NoticeOrRelayActivity" />
+        <activity android:name="com.epeisong.ui.activity.BulletinDetailActivity" />
+        <activity android:name="com.epeisong.ui.activity.MarketOfFreightSearchActivity" >
+        </activity>
+        <activity android:name="com.epeisong.ui.activity.SetGetGoodsActivity" />
+        <activity android:name="com.epeisong.ui.activity.VechileInforActivity" />
+        <activity android:name="com.epeisong.ui.activity.InMarketActivity" />
+        <activity android:name="com.epeisong.ui.activity.InfoScreenActivity" />
+        <activity android:name="com.epeisong.ui.activity.ComplaintActivity" />
+        <activity android:name="com.epeisong.ui.activity.GuaCompDetailActivity" />
+        <activity android:name="com.epeisong.ui.activity.GuaCompResultActivity" />
+        <activity android:name="com.epeisong.ui.activity.PaymentActivity" />
+        <activity
+            android:name="com.epeisong.ui.activity.ProductManaActivity"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity android:name="com.epeisong.ui.activity.TradeManaActivity" />
+        <activity
+            android:name="com.epeisong.ui.activity.ChatRoomActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.epeisong.ui.activity.TradeBoxActivity" />
+        <activity android:name="com.epeisong.ui.activity.BlacklistActivity" />
+        <activity android:name="com.epeisong.ui.activity.FansActivity" />
+        <activity android:name="com.epeisong.ui.activity.SearchContactsActivity" />
+        <activity android:name="com.epeisong.ui.activity.SearchUserDetailActivity" />
+        <activity android:name="com.epeisong.ui.activity.ContactsInfoActivity_old" />
+        <activity android:name="com.epeisong.ui.activity.PersonalInfoActivity" />
+        <activity android:name="com.epeisong.ui.activity.PersonalInfoEditActivity" />
+        <activity android:name="com.epeisong.ui.activity.AddServiceActivity" />
+        <activity android:name="com.epeisong.ui.activity.SupplyDetailsActivity" />
+        <activity android:name="com.epeisong.ui.activity.CarSourceActivity" />
+        <activity android:name="com.epeisong.ui.activity.FreightDetailActivity" />
+        <activity android:name="com.epeisong.ui.activity.SearchFreightActivity" />
+        <activity
+            android:name="com.epeisong.ui.activity.ContactsActivity"
+            android:theme="@style/Theme.TransActivity" />
+        <activity android:name="com.epeisong.ui.activity.SearchFreightDetailActivity" />
+        <activity android:name="com.epeisong.ui.activity.FreightOfContactsActivity_old" />
+        <activity android:name="com.epeisong.ui.activity.FreightOfContactsActivity" />
+        <activity android:name="com.epeisong.ui.activity.SearchTheSourceSupplyOCarsActivity" />
+        <activity android:name="com.epeisong.ui.activity.ConsultingToHelpActivity" />
+        <activity android:name="com.epeisong.ui.activity.SecurityCenterActivity" />
+        <activity android:name="com.epeisong.ui.activity.EpeisongPlatformActivity" />
+        <activity android:name="com.epeisong.ui.activity.AccountAndSecureCenter" />
+        <activity android:name="com.epeisong.ui.activity.AccountInfoActivity" />
+        <activity android:name="com.epeisong.ui.activity.MineDetailActivity" />
+        <activity android:name="com.epeisong.ui.activity.MineQrCodeActivity" />
+        <activity android:name="com.epeisong.ui.activity.MineQuoteActivity" />
+        <activity android:name="com.epeisong.ui.activity.NotifySetupActivity" />
+        <activity android:name="com.epeisong.ui.activity.MinePrivacyActivity" />
+        <activity android:name="com.epeisong.ui.activity.EntireVehicleActivity_old" />
+        <activity android:name="com.epeisong.ui.activity.EntireVehicleActivity" />
+        <activity android:name="com.epeisong.ui.activity.BlackBoardOtherActivity" />
+        <activity android:name="com.epeisong.ui.activity.EntireVehicleDetailActivity" />
+        <activity android:name="com.epeisong.ui.activity.LclActivity" />
+        <activity android:name="com.epeisong.ui.activity.LclDetailActivity" />
+        <activity android:name="com.epeisong.ui.activity.FmsActivity" />
+        <activity android:name="com.epeisong.ui.activity.InsuranceActivity" />
+        <activity android:name="com.epeisong.ui.activity.StationActivity" />
+        <activity android:name="com.epeisong.ui.activity.ContactsDetailActivity" />
+        <activity android:name="com.epeisong.ui.activity.ProductDetailActivity" />
+        <activity android:name="com.epeisong.ui.activity.CustomerComplaintActivity" />
+        <activity
+            android:name="com.epeisong.ui.activity.EditOtherAddressActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.epeisong.ui.activity.SimpleEditActivity"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name="com.epeisong.ui.activity.EditAddressActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.epeisong.ui.activity.ChooseRegionActivity"
+            android:theme="@style/Theme.TransActivity" />
+        <activity
+            android:name="com.epeisong.ui.activity.ChooseRegionSearchActivity"
+            android:theme="@style/activity_half_transparent" />
+        <activity android:name="com.test.log.CrashLogListActivity" />
+        <activity android:name="com.test.log.CrashLogDetailActivity" />
+        <activity android:name="com.test.log.LogcatActivity" />
+        <activity android:name="com.zxing.CaptureActivity" />
+        <activity android:name="com.zxing.CaptureResultActivity" />
+        <activity android:name="com.epeisong.ui.activity.MarketOfFreightActivity" />
+        <activity android:name="com.epeisong.ui.activity.MySupplyDetailsActivity" />
+        <activity android:name="com.epeisong.ui.activity.EquipmentLeasingActivity" />
+        <activity android:name="com.epeisong.ui.activity.EquipmentDetailActivity" />
+        <activity android:name="com.epeisong.ui.activity.MoreActivity" />
+        <activity android:name="com.epeisong.ui.activity.StorageActivity" />
+        <activity android:name="com.epeisong.ui.activity.StorageDetailActivity" />
+        <activity android:name="com.epeisong.ui.activity.PackagingActivity" />
+        <activity android:name="com.epeisong.ui.activity.PackagingDetailActivity" />
+        <activity android:name="com.epeisong.ui.activity.MoveHouseActivity" />
+        <activity android:name="com.epeisong.ui.activity.MoveHouseDetailActivity" />
+        <activity android:name="com.epeisong.ui.activity.CourierActivity" />
+        <activity android:name="com.epeisong.ui.activity.CourierDetailActivity" />
+        <activity android:name="com.epeisong.ui.activity.BulletinListActivity" />
+        <activity android:name="com.epeisong.ui.activity.CommonSetupActivity" />
+        <activity android:name="com.epeisong.ui.activity.MineCEActivity" />
+        <activity
+            android:name="com.epeisong.base.dialog.ChooseLineActivity"
+            android:theme="@style/Theme.FloatActivity" />
+        <activity android:name="com.epeisong.ui.activity.SearchFollowActivity" />
+        <activity android:name="com.epeisong.ui.activity.InfoFeeListActivity" />
+        <activity
+            android:name="com.epeisong.ui.activity.InfoFeeDetailActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.epeisong.ui.activity.PaymentSelectActivity" />
+        <activity android:name="com.epeisong.ui.activity.ChangeLoginPwdActivity" />
+        <activity android:name="com.epeisong.ui.activity.ForgetLoginPwdActivity" />
+        <activity android:name="com.epeisong.ui.activity.LoginFreezeAccountActivity" />
+        <activity android:name="com.epeisong.ui.activity.ChangePhoneActivity" />
+        <!-- 角色 -->
+        <activity android:name="com.epeisong.ui.activity.TransferWithdrawalActivity" />
+        <activity android:name="com.epeisong.ui.activity.WithdrawalActivity" />
+        <activity android:name="com.epeisong.ui.activity.TransferWithdrawalDetailActivity" >
+        </activity>
+        <activity android:name="com.epeisong.ui.activity.WithdrawalDetailActivity" >
+        </activity>
+        <activity android:name="com.epeisong.ui.activity.WithdrawalTaskActivity" >
+        </activity>
+        <activity android:name="com.epeisong.ui.activity.CustomerProblemActivity" >
+        </activity>
+        <activity android:name="com.epeisong.ui.activity.CustomerProblemDetailActivity" >
+        </activity>
+        <activity android:name="com.epeisong.ui.activity.ComplaintHandlingActivity" >
+        </activity>
+        <activity android:name="com.epeisong.ui.activity.ComplaintRecordDetailActivity" >
+        </activity>
+        <activity android:name="com.epeisong.ui.activity.CustomerAddUserActivity" >
+        </activity>
+        <activity android:name="com.epeisong.ui.activity.ComplaintDealDetailActivity" >
+        </activity>
+        <!-- Manage -->
+        <activity android:name="com.epeisong.ui.activity.MemberManagerActivity" />
+        <activity
+            android:name="com.epeisong.ui.activity.MarketManageActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.epeisong.ui.activity.NewMembersActivity" />
+        <activity android:name="com.epeisong.ui.activity.ManageInfoActivity" />
+        <activity android:name="com.epeisong.ui.activity.ManageMemberActivity" />
+        <activity android:name="com.epeisong.ui.activity.ManageScreenActivity" />
+        <activity android:name="com.epeisong.ui.activity.OtherSupplyDetailsActivity" />
+        <activity android:name="com.epeisong.ui.activity.OtherCarSourceActivity" />
+        <activity android:name="com.epeisong.ui.activity.MyCarSourceActivity" />
+        <activity android:name="com.epeisong.ui.activity.ChangePasswordActivity" />
+        <activity android:name="com.epeisong.ui.activity.ForgetPasswordActivity_" />
+        <activity android:name="com.epeisong.ui.activity.ForgetPasswordActivity" />
+        <activity android:name="com.epeisong.ui.activity.ChangeTelephoneNumberActivity" />
+        <activity android:name="com.epeisong.ui.activity.VerificationCodeActivity" />
+        <activity android:name="com.epeisong.ui.activity.FastFindingTheCarLookingForGoodsActivity" />
+        <activity android:name="com.epeisong.ui.activity.TermsAndPrivacyActivtiy" />
+        <activity android:name="com.epeisong.ui.activity.TheNewVersionActivity" />
+        <activity android:name="com.epeisong.ui.activity.TruckGoodsActivity" />
+        <activity android:name="com.epeisong.ui.activity.SetPassWordActivity" />
+        <activity android:name="com.epeisong.ui.activity.MinetoMeActivity" />
+        <activity android:name="com.epeisong.ui.activity.MinetoOtherActivity" />
+        <activity android:name="com.epeisong.ui.activity.AddQuoteActivity" />
+        <activity android:name="com.epeisong.ui.activity.ChooseSpecificContactsActivity" />
+        <activity android:name="com.epeisong.ui.activity.ChooseSSearchContactsActivity" />
+        <activity android:name="com.epeisong.ui.activity.MineBillDetailActivity" />
+        <activity android:name="com.epeisong.ui.activity.EditTagActivity" />
+        <activity android:name="com.epeisong.ui.activity.NearByLogisticsListActivity" />
+
+        <!-- 地图 -->
+        <activity android:name="com.bdmap.impl.MyLocActivity" />
+        <activity android:name="com.bdmap.impl.FixedLocActivity" />
+        <activity android:name="com.bdmap.impl.NearByLogisticsMapActivity" />
+        <activity
+            android:name="com.epeisong.ui.activity.PoiSearchActivity"
+            android:theme="@style/activity_transparent" />
+
+        <!-- wallet -->
+        <activity android:name="com.epeisong.ui.activity.WalletActivity" />
+        <activity android:name="com.epeisong.ui.activity.WalletAgreenActivity" />
+        <activity android:name="com.epeisong.ui.activity.WalletBankActivity" />
+        <activity android:name="com.epeisong.ui.activity.WalletAddBankActivity" />
+        <activity android:name="com.epeisong.ui.activity.WalletGuaranteeActivity" />
+        <activity android:name="com.epeisong.ui.activity.WalletPersonalInfoActivity" />
+        <activity android:name="com.epeisong.ui.activity.WalletRechargeActivity" />
+        <activity android:name="com.epeisong.ui.activity.WalletWithdrawalActivity" />
+        <activity android:name="com.epeisong.ui.activity.WalletWithdrawalfActivity" />
+        <activity android:name="com.epeisong.ui.activity.OpenWalletActivity" />
+        <activity android:name="com.epeisong.ui.activity.PaymentSecurity" />
+        <activity android:name="com.epeisong.ui.activity.FreezeWalletActivity" />
+        <activity android:name="com.epeisong.ui.activity.GuaranteeIntroActivity" />
+        <activity android:name="com.epeisong.ui.activity.GuaranteeActivity" />
+        <activity android:name="com.epeisong.ui.activity.WalletGuarateeDetailActivity" />
+        <activity android:name="com.epeisong.ui.activity.WalletDetailActivity" />
+        <activity android:name="com.epeisong.ui.activity.ManaAddUserActivity" />
+        <activity android:name="com.epeisong.ui.activity.ManageAddUserActivity" />
+        <activity android:name="com.epeisong.ui.activity.ManaManaUserActivity" />
+        <activity android:name="com.epeisong.ui.activity.ManaUserDetailActivity" />
+
+        <!-- 广播接收者 -->
+        <receiver android:name="com.epeisong.service.receiver.AlarmBroadcastReceiver" />
+        <receiver android:name="com.epeisong.service.receiver.SysReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <!-- for test -->
+        <activity android:name="com.epeisong.base.activity.ShowImagesActivity" />
+        <activity android:name="com.test.request.RequestTestActivity" />
+        <activity android:name="com.test.other.MoreFunctionActivity" />
+        <activity android:name="com.test.other.baidu_lbs.BaiduLocTestActivity" />
+        <activity android:name="com.test.other.baidu_lbs.BaiduMapTestActivity" />
+        <activity android:name="com.test.other.baidu_lbs.BaiduPoiTestActivity" />
+
+        <!-- alipay begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <!-- alipay end -->
+
+        <service
+            android:name="com.epeisong.service.CoreService"
+            android:exported="false" >
+            <intent-filter android:priority="1000" />
+        </service>
+        <service
+            android:name="com.epeisong.service.notify.NotifyService"
+            android:exported="false" >
+            <intent-filter android:priority="1000" />
+        </service>
+        <service
+            android:name="com.test.log.LogcatService"
+            android:exported="false" >
+            <intent-filter android:priority="1000" />
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <com.epeisong.base.view.AdjustHeightGridView
+            android:id="@+id/gv_contactss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/notice_btn"
+            android:descendantFocusability="beforeDescendants"
+            android:horizontalSpacing="8dp"
+            android:listSelector="@color/transparent"
+            android:numColumns="6"
+            android:padding="10dp"
+            android:verticalSpacing="6dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/llt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_bg_rect_gray"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/llt0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_release_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="15dp"
+                            android:text="发布时间："
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#CCCCCC" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="15dp" >
+
+                        <ImageView
+                            android:id="@+id/iv_goods"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:id="@+id/tv_region"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/iv_goods"
+                            android:paddingLeft="8dp"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_describe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:textSize="18sp"
+                        android:paddingBottom="10dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_zt"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/rllt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="15dp" >
+                
+                <Button 
+                    android:id="@+id/btn_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_freight_detail_button"
+                    android:text="通知"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    />
+                
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/llt5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/common_bg_rect_gray" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/rllt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" >
+
+                        <TextView
+                            android:id="@+id/tv_fabufang"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:paddingLeft="15dp"
+                            android:text="发布方:"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_user_show_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/tv_fabufang"
+                            android:paddingLeft="10dp"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#CCCCCC" />
+
+                    <RelativeLayout
+                        android:id="@+id/rllt3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingRight="10dp"
+                        android:visibility="visible" >
+
+                        <TextView
+                            android:id="@+id/tv_the_contact"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:paddingLeft="15dp"
+                            android:text="联系人:"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_contact_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/tv_the_contact"
+                            android:paddingLeft="10dp"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#CCCCCC" />
+
+                    <RelativeLayout
+                        android:id="@+id/rllt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingRight="10dp"
+                        android:visibility="visible" >
+
+                        <TextView
+                            android:id="@+id/tv_phone"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:paddingLeft="15dp"
+                            android:text="手    机:"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_phone_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/tv_phone"
+                            android:paddingLeft="10dp"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.5dp"
+                        android:background="#CCCCCC" />
+
+                    <RelativeLayout
+                        android:id="@+id/rllt5"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingRight="10dp"
+                        android:visibility="visible" >
+
+                        <TextView
+                            android:id="@+id/tv_telephone"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:paddingLeft="15dp"
+                            android:text="电    话:"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_telephone_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/tv_telephone"
+                            android:paddingLeft="10dp"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

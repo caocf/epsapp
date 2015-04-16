@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+           android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="2dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/fl_choosable_001"
+            android:layout_width="0dp"
+            
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <include layout="@layout/layout_choosableuser" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="0.3dp"
+            android:layout_height="match_parent"
+            android:background="#CFCFCF" />
+
+        <FrameLayout
+            android:id="@+id/fl_choosable_002"
+            android:layout_width="0dp"
+           
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <include layout="@layout/layout_chooseable_line16" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:id="@+id/view_empty2"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                />
+<!--              <Button
+                android:id="@+id/bt_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/search_kaishisousuobeijing"
+                android:text="搜索车源货源"
+                android:textSize="20sp"
+                android:textColor="#ffffff" />
+-->
+            <LinearLayout
+                android:id="@+id/llt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/view_empty2"
+                android:background="@color/white"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical" >
+            <com.epeisong.base.view.EndlessEmptyListView
+                android:id="@+id/lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:cacheColorHint="@color/transparent" >
+            </com.epeisong.base.view.EndlessEmptyListView>
+            
+            <TextView
+                android:id="@+id/view_empty"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:visibility="gone"
+
+                android:textSize="18sp"
+                android:textColor="@color/gray"
+                />
+            </LinearLayout>
+            </RelativeLayout>
+
+
+        <FrameLayout
+            android:id="@+id/fl_choose_container0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#55000000"
+            android:padding="10dp"
+            android:visibility="gone" >
+
+            <com.epeisong.ui.view.ChooseLineLayout
+                android:id="@+id/choose_line_layout0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <com.epeisong.ui.view.ChooseFreightTypeLayout
+                android:id="@+id/choose_freight_type_layout0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </FrameLayout>
+    </FrameLayout>
+
+</LinearLayout>

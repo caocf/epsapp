@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <TextView
+         android:id="@+id/tv_region"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textSize="17sp"
+         android:textColor="@color/black"
+         android:padding="15dp"/>
+
+     <View 
+         android:layout_width="match_parent"
+         android:layout_height="0.1dp"
+         android:background="@color/view_line"
+         />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone"
+        >
+        <TextView 
+            android:id="@+id/tv_shielding_user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="用户名"
+            />
+        <Button 
+            android:id="@+id/btn_cancel_shielding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消屏蔽"
+            />
+    </LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_bankcard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+     >
+	<RelativeLayout
+    android:id="@+id/rl_bankcard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+     >
+	<ImageView 
+   		android:id="@+id/iv_bankcard"
+        android:layout_width="match_parent"
+    android:layout_height="105dp"
+    android:background="@drawable/mybank_abc"
+    />
+        <TextView
+            android:id="@+id/tv_bank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_bank_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+                android:paddingLeft="20dp"
+            android:layout_below="@+id/tv_bank_name"
+            android:text="银行卡"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_bank_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+        android:layout_below="@+id/tv_bank_type"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="26sp" />
+
+    </RelativeLayout>
+</LinearLayout>

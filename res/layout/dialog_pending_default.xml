@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="#88000000"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_margin="40dp">
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:id="@+id/tv_pend_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:text="请稍候..."
+        android:textColor="@color/white" />
+
+</LinearLayout>

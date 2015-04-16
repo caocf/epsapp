@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ebebeb"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_common_problem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="常见问题"
+            android:textColor="#878787"
+            android:textSize="16sp" />
+
+        <com.epeisong.base.view.AdjustHeightExpandableListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:groupIndicator="@null" />
+
+        <Button
+            android:id="@+id/bt_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/consulting_to_help"
+            android:text="点击咨询"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>

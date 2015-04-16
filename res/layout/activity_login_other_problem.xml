@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:gravity="center_horizontal"
+                android:text="把您的问题发送给客服，客服会尽快给你回电"
+                android:textColor="#a6a6a6"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_top"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="您的账号："
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/et_account"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_customer_input"
+                        android:hint="请输入您已注册的账号"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:maxLength="11"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="您的名称："
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_customer_input"
+                        android:hint="请输入您的用户名称"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="联系电话："
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/et_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_customer_input"
+                        android:hint="请输入您目前的联系电话"
+                        android:inputType="phone"
+                        android:padding="10dp"
+                        android:maxLength="11"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="问题类型："
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_customer_input"
+                        android:orientation="horizontal"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:id="@+id/tv_typename"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableRight="@drawable/common_arrow_blue_bottom20"
+                            android:textColor="@color/black"
+                            android:hint="请选择类型"
+                            android:textSize="17sp" />
+
+                        <!-- <ImageButton -->
+                        <!-- android:id="@+id/et_usertype" -->
+                        <!-- android:layout_width="wrap_content" -->
+                        <!-- android:layout_height="wrap_content" -->
+                        <!-- android:layout_gravity="center" -->
+                        <!-- android:background="@drawable/common_arrow_blue_bottom20" -->
+                        <!-- android:gravity="center" /> -->
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_problem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="您的问题："
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/et_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/tv_problem"
+                        android:background="@drawable/selector_customer_input"
+                        android:gravity="top|left"
+                        android:hint="请输入问题"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" >
+                    </EditText>
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/selector_main_btn_bg"
+                    android:text="发送"
+                    android:textColor="@color/white"
+                    android:textSize="23sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_below="@id/ll_center"
+                android:text="客服电话：025-52668200"
+                android:textColor="#a6a6a6"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

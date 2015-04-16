@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:maxWidth="100dp"
+        android:text="姓名"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/v_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/tv_name"
+        android:text="["
+        android:textColor="#bfc2cd"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/v_left"
+        android:singleLine="true"
+        android:text="phone"
+        android:textColor="#bfc2cd"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/v_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/tv_phone"
+        android:text="]"
+        android:textColor="#bfc2cd"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_show_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:hint="show_name"
+        android:maxLength="4"
+        android:singleLine="true"
+        android:textColor="#bfc2cd"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tv_status"
+        android:src="@drawable/selector_contacts_add" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:gravity="center_vertical"
+        android:text="..."
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_gray" />
+
+</RelativeLayout>

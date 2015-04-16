@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/iv_corner" -->
+        <!-- android:layout_width="42dp" -->
+        <!-- android:layout_height="42dp" -->
+        <!-- android:layout_alignParentLeft="true" -->
+        <!-- android:layout_alignParentTop="true" -->
+        <!-- android:src="@drawable/shape_corner_background" /> -->
+
+        <com.epeisong.ui.view.RoundImageView
+            android:id="@+id/iv_user_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/user_logo_changable" >
+        </com.epeisong.ui.view.RoundImageView>
+
+        <LinearLayout
+            android:id="@+id/ll_user"
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:max="10"
+                android:progress="3" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_market_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/ll_user"
+            android:layout_toRightOf="@+id/iv_user_logo"
+            android:singleLine="true"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_user_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_user"
+            android:layout_toRightOf="@+id/iv_user_logo"
+            android:text="简介："
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_user_intro_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_user"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/tv_user_intro"
+            android:maxLines="2"
+            android:text="简介内容"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_user_intro_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_user_logo"
+            android:text="地址："
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:maxWidth="80dp"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_market_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_user_intro_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/tv_distance"
+            android:layout_toRightOf="@+id/tv_address"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="江苏省南京"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bfc1cd" />
+
+</LinearLayout>

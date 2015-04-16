@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/common_tab2_bg"
+    >
+
+        <ImageView 
+            android:id="@+id/im_choosable0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/common_arrow_blue_bottom20"
+        />
+     
+         <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"        
+        android:layout_toLeftOf="@id/im_choosable0"
+        android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/tv_choosable0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="5dp"
+
+        android:text="选择条件车货"
+        android:textColor="@color/black"
+        android:textSize="16sp" 
+        />
+	</LinearLayout>
+
+
+</RelativeLayout>

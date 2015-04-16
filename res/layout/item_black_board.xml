@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_borad_item"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_black_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/ll_black_item"
+            style="@style/black_borad_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" >
+
+            <ImageView
+                android:id="@+id/iv_truck_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingRight="10dp"
+                android:src="@drawable/selector_borad_goods" />
+
+            <TextView
+                android:id="@+id/tv_black_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_truck_goods"
+                android:maxLength="4"
+                android:maxLines="1"
+                android:text="广州"
+                android:textColor="@drawable/selector_borad_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/iv_black_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_black_start"
+                android:text=" — "
+                android:textColor="@drawable/selector_borad_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_black_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_black_arrow"
+                android:maxLength="5"
+                android:maxLines="1"
+                android:text="广州"
+                android:textColor="@drawable/selector_borad_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_black_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="早上8：30"
+                android:textColor="@drawable/selector_borad_text"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_black_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_black_item"
+            android:layout_marginBottom="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_black_content"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="marquee"
+                    android:maxLines="1"
+                    android:paddingRight="10dp"
+                    android:text="ddasdsdd"
+                    android:textColor="@drawable/selector_borad_text"
+                    android:textSize="16sp" />
+
+                <com.epeisong.base.view.SlipButton
+                    android:id="@+id/iv_switch"
+                    android:layout_width="75dp"
+                    android:layout_height="35dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iv_state"
+                android:layout_width="42dp"
+            	android:layout_height="42dp"
+            	android:src="@null" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

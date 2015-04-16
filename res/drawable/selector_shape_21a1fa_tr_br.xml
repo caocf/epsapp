@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/shape_content_007cca_tr_br" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/shape_content_21a1fa_tr_br"></item>
+
+</selector>

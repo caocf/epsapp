@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="为保障您的账号安全，修改登录密码前请输入原登录密码"
+            android:textColor="#878787"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="原登录密码："
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_old_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/common_bg_edit"
+                android:inputType="textPassword"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_old_pwd_warn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:text="原登录密码输入错误"
+            android:textColor="@color/red"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新登录密码："
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_new_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/common_bg_edit"
+                android:hint="6—20位数字或字母"
+                android:inputType="textPassword"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_new_pwd_warn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:text="密码应为6-20位数字或字母"
+            android:textColor="@color/red"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认新密码："
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_confirm_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/common_bg_edit"
+                android:inputType="textPassword"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_confirm_pwd_warn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:text="两次输入的密码不一致"
+            android:textColor="@color/red"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/selector_main_btn_bg"
+            android:text="确认"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</ScrollView>

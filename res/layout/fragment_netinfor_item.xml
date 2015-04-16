@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+         >
+
+        <TextView
+            android:id="@+id/tv_netname"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="南京网点"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:id="@+id/rl_net_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/v_net_name"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="联系人:"
+                    android:textColor="#555c66"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_net_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="黄伟"
+                    android:layout_toRightOf="@id/v_net_name"
+                    android:textColor="#555c66"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_net_region"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/v_region_name"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="服务区域:"
+                    android:textColor="#555c66"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_region_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="南京"
+                    android:layout_toRightOf="@id/v_region_name"
+                    android:textColor="#555c66"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_net_telephone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/v_net_telephone"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="电话:"
+                    android:textColor="#555c66"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_net_telephone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/v_net_telephone"
+                    android:textColor="#555c66"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/iv_netaction_telephone"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/selector_netinfor_info_telephone" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/iv_netaction_telephone"
+                    android:background="#a5a5a5" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_net_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/v_net_phone"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="手机:"
+                    android:textColor="#555c66"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_net_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/v_net_phone"
+                    android:textColor="#555c66"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/iv_netaction_phone"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/selector_netinfor_info_phone" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/iv_netaction_phone"
+                    android:background="#a5a5a5" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_net_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/v_net_address"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="地址:"
+                    android:textColor="#555c66"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_net_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/v_net_address"
+                    android:textColor="#555c66"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

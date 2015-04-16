@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lib.pulltorefresh.PullToRefreshListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ptr_lv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_toLeftOf="@+id/fast_bar"
+    android:cacheColorHint="@color/transparent"
+    android:divider="@null"
+    android:smoothScrollbar="true"
+    ptr:ptrAnimationStyle="flip"
+    ptr:ptrHeaderTextColor="@android:color/darker_gray" >
+
+</lib.pulltorefresh.PullToRefreshListView>

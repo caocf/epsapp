@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_tab_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/user_logo_changable" />
+
+            <TextView
+                android:id="@+id/view_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/iv_logo"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_logo"
+                android:text="我的账号"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_account"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_logo"
+                android:text="专线:"
+                android:textColor="#757F86"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/line"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/line"
+                android:singleLine="true"
+                android:textColor="#757F86"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/view_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_logo"
+                android:text="简介:"
+                android:textColor="#757F86"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/view_desc"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/view_desc"
+                android:textColor="#757F86"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_contacts_sub" />
+
+        <RelativeLayout
+            android:id="@+id/rl_tab_business_and_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="我的业务与报价"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/line_contacts_sub"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/indicator_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0fa6ff" />
+
+        <View
+            android:id="@+id/indicator_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0fa6ff"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/lv_account"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ededed"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@null" >
+        </ListView>
+
+        <View
+            android:id="@+id/view_business"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</LinearLayout>

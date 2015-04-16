@@ -1,0 +1,1287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:text="线路"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_bg_rect_gray"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/tv_cong"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="从"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tv_cong"
+                            android:src="@drawable/quote_starsign" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/bt_startname"
+                        android:layout_width="150dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/addbank_selectcity"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/tv_dao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="到"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tv_dao"
+                            android:src="@drawable/quote_starsign" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/bt_endname"
+                        android:layout_width="150dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/addbank_selectcity"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_distance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="98dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="共"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/et_distance"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/withdrawal_input_bg"
+                        android:maxEms="2"
+                        android:maxLength="8"
+                        android:numeric="decimal"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="公里"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="费用"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_bg_rect_gray"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/ll_serverzone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/tv_fwdq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="服务地区"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tv_fwdq"
+                            android:src="@drawable/quote_starsign" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/bt_serverzone"
+                        android:layout_width="150dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/addbank_selectcity"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                                <LinearLayout
+                    android:id="@+id/ll_transhiprange"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="驳货范围"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/et_transhiprange"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/withdrawal_input_bg"
+                        android:maxLength="8"
+                        android:numeric="integer"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="公里以内"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/ll_vechilelen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/tv_chechang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="车长"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tv_chechang"
+                            android:src="@drawable/quote_starsign" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/bt_vechilelen"
+                        android:layout_width="150dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/addbank_selectcity"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                                <LinearLayout
+                    android:id="@+id/ll_forgoods"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                                                        <RelativeLayout
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/tv_forgoods"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="适用货物"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tv_forgoods"
+                            android:src="@drawable/quote_starsign" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/bt_forgoods"
+                        android:layout_width="150dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/addbank_selectcity"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/ll_quotecost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/tv_baojia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="报价"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tv_baojia"
+                            android:src="@drawable/quote_starsign" />
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_quotecost"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/withdrawal_input_bg"
+                        android:maxLength="5"
+                        android:numeric="integer"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+
+                    <Button
+                        android:id="@+id/bt_quotecost"
+                        android:layout_width="60dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/addbank_selectcity"
+                        android:padding="10dp"
+                        android:text="元/车"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_quotecost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="元/单"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_minprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/tv_qibuj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="起步价"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tv_qibuj"
+                            android:src="@drawable/quote_starsign" />
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_minprice"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/withdrawal_input_bg"
+                        android:maxLength="5"
+                        android:numeric="integer"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="元/单"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_minamount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/tv_qibul"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="起步量"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tv_qibul"
+                            android:src="@drawable/quote_starsign" />
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_minamount"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/withdrawal_input_bg"
+                        android:maxLength="5"
+                        android:numeric="integer"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+
+                    <Button
+                        android:id="@+id/bt_minamount"
+                        android:layout_width="60dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/addbank_selectcity"
+                        android:padding="10dp"
+                        android:text="公斤"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_largerprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/tv_ccszbj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="超出首重报价"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tv_ccszbj"
+                            android:src="@drawable/quote_starsign" />
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_largerprice"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/withdrawal_input_bg"
+                        android:maxLength="5"
+                        android:numeric="integer"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+
+                                        <TextView
+                        android:id="@+id/tv_largerprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="元/公斤"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+                                        
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_quoteunit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/tv_bjdw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="报价单位"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tv_bjdw"
+                            android:src="@drawable/quote_starsign" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/bt_quoteunit"
+                        android:layout_width="60dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/addbank_selectcity"
+                        android:padding="10dp"
+                        android:text="吨"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_quoteone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/tv_baojia2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="报价"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tv_baojia2"
+                            android:src="@drawable/quote_starsign" />
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_quotemin"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/withdrawal_input_bg"
+                        android:maxLength="5"
+                        android:numeric="integer"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="　至　"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/et_quotemax"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/withdrawal_input_bg"
+                        android:maxLength="5"
+                        android:numeric="integer"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_dun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="吨"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_quoteoneunit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+                    
+                    <TextView
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+<!-- 
+                    <TextView
+                        android:layout_width="133dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="　　　"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+ -->
+                    <EditText
+                        android:id="@+id/et_quoteoneunit"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/withdrawal_input_bg"
+                        android:maxLength="5"
+                        android:numeric="integer"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_yuandun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="元/吨"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/quote_addsign" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_quotetwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/et_quotetwo"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/withdrawal_input_bg"
+                        android:maxLength="5"
+                        android:numeric="integer"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_dunyishang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:text="吨以上"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/et_quotetwounit"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/withdrawal_input_bg"
+                        android:maxLength="5"
+                        android:numeric="integer"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_yuandun2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="元/吨"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                
+                                <LinearLayout
+                    android:id="@+id/ll_onequote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+                    
+                    <RelativeLayout
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/tv_baojia2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="报价"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tv_baojia2"
+                            android:src="@drawable/quote_starsign" />
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_onequote"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/withdrawal_input_bg"
+                        android:maxLength="5"
+                        android:numeric="integer"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_oneyuandun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="元/吨"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+                
+                                <LinearLayout
+                    android:id="@+id/ll_quoteusetype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+                    
+                    <TextView
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <Button
+                        android:id="@+id/bt_quoteusetype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/selector_common_btn_bg_orange"
+               			 android:text="使用单一报价"
+              			  android:textColor="@color/white"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/ll_pickupexpense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="提货费"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/et_pickupexpense"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/withdrawal_input_bg"
+                        android:maxLength="5"
+                        android:numeric="integer"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="元/单"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_deliverexpense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="送货费"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/et_deliverexpense"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/withdrawal_input_bg"
+                        android:maxLength="5"
+                        android:numeric="integer"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="元/单"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="其它费用"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/et_otherexpense"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/withdrawal_input_bg"
+                        android:maxLength="5"
+                        android:numeric="integer"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="元/单"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_payway"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/tv_fkfs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="付款方式"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/tv_fkfs"
+                            android:src="@drawable/quote_starsign" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/bt_payway"
+                        android:layout_width="150dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/addbank_selectcity"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="权限设置"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_bg_rect_gray"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:src="@drawable/quote_starsign" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="本条报价的公开对象:"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_permissionset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp" />
+
+                    <Button
+                        android:id="@+id/bt_permissionset"
+                        android:layout_width="180dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/addbank_selectcity"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="备注"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_bg_rect_gray"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+
+
+
+                                <LinearLayout
+                    android:id="@+id/ll_vechiletype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="车型"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <Button
+                        android:id="@+id/bt_vechiletype"
+                        android:layout_width="150dp"
+                        android:layout_height="42dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/addbank_selectcity"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/ll_dispatchrange"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="配送范围"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/et_dispatchrange"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/withdrawal_input_bg"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_goodsinfor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="货物描述"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/et_goodsinfor"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/withdrawal_input_bg"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="核载质量"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/et_weight"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/withdrawal_input_bg"
+                        android:maxLength="8"
+                        android:numeric="decimal"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_volume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="核载立方"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/et_volume"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/withdrawal_input_bg"
+                        android:maxLength="8"
+                        android:numeric="decimal"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_zonelimit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="地区限制"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/et_zonelimit"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/withdrawal_input_bg"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="其它"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/et_other"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/withdrawal_input_bg"
+                        android:minLines="2"
+                        android:padding="10dp"
+                        android:textSize="17sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_add"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/selector_common_btn_bg_orange"
+                android:text="添加"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

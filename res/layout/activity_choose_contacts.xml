@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ExpandableListView
+        android:id="@+id/elv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:overScrollMode="never"
+        android:scrollbars="vertical" >
+    </ExpandableListView>
+
+    <com.epeisong.base.view.IndexBar
+        android:id="@+id/bar"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/elv" />
+
+<!--     <ImageView -->
+<!--         android:id="@+id/iv_pinyin" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="match_parent" -->
+<!--         android:layout_alignParentRight="true" -->
+<!--         android:layout_alignTop="@id/elv" -->
+<!--         android:background="@drawable/pinyin_normal" -->
+<!--         android:clickable="true" -->
+<!--         android:focusable="true" -->
+<!--         android:focusableInTouchMode="true" -->
+<!--         android:paddingLeft="10dp" /> -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/green"
+        android:paddingLeft="10dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_search" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <!-- android:layoutMode="clipBounds" -->
+            <HorizontalScrollView
+                android:id="@+id/hsv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:layoutMode="clipBounds"
+                android:minWidth="30dp"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/ll_contacts_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:hint="搜索"
+                android:singleLine="true"
+                android:textColor="@color/light_gray" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="libs/armeabi"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/install"/>
+	<classpathentry exported="true" kind="lib" path="J:/易配送/client/epeisong_android/libs/alipaysdk.jar"/>
+	<classpathentry exported="true" kind="lib" path="J:/易配送/client/epeisong_android/libs/alipaysecsdk.jar"/>
+	<classpathentry exported="true" kind="lib" path="J:/易配送/client/epeisong_android/libs/alipayutdid.jar"/>
+	<classpathentry exported="true" kind="lib" path="J:/易配送/client/epeisong_android/libs/android-support-v4.jar"/>
+	<classpathentry exported="true" kind="lib" path="J:/易配送/client/epeisong_android/libs/BaiduLBS_Android.jar"/>
+	<classpathentry exported="true" kind="lib" path="J:/易配送/client/epeisong_android/libs/common-1.0.0-SNAPSHOT.jar"/>
+	<classpathentry exported="true" kind="lib" path="J:/易配送/client/epeisong_android/libs/core-2.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="J:/易配送/client/epeisong_android/libs/epeisong-android-net-1.0.0-SNAPSHOT.jar"/>
+	<classpathentry exported="true" kind="lib" path="J:/易配送/client/epeisong_android/libs/epeisong-android-speech-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry exported="true" kind="lib" path="J:/易配送/client/epeisong_android/libs/gson-2.2.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="J:/易配送/client/epeisong_android/libs/msc-1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="J:/易配送/client/epeisong_android/libs/proto-1.0.0-SNAPSHOT.jar"/>
+	<classpathentry exported="true" kind="lib" path="J:/易配送/client/epeisong_android/libs/protobuf-java-2.5.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="J:/易配送/client/epeisong_android/libs/sunflower-1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="J:/易配送/client/epeisong_android/libs/universal-image-loader-1.9.2.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

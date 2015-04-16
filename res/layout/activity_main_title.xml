@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        android:id="@+id/rl_left"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/selector_custom_title_item"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/tv_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="扫一扫"
+            android:textColor="#E1E1E1"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_above="@id/tv_scan"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/main_title_scan" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_right"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/selector_custom_title_item"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/tv_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="联系人"
+            android:textColor="#E1E1E1"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_contacts"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_above="@id/tv_contacts"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/main_title_contacts" />
+
+        <ImageView
+            android:id="@+id/iv_contacts_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/iv_contacts"
+            android:layout_alignTop="@id/iv_contacts"
+            android:src="@drawable/main_red_point_17"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="易配送"
+        android:textColor="#E1E1E1"
+        android:textSize="22sp"
+        android:typeface="serif" />
+
+</RelativeLayout>

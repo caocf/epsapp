@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp" >
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/user_logo_default" />
+
+        <TextView
+            android:id="@+id/tv_msg_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/tv_time"
+            android:layout_toRightOf="@id/iv_icon"
+            android:text="from"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_bulletin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tv_time"
+            android:layout_toRightOf="@id/iv_icon"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="left"
+                android:textColor="#57c8f2"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="right"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_freight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tv_time"
+            android:layout_toRightOf="@id/iv_icon"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" >
+
+                <TextView
+                    android:id="@+id/iv_long_arrow_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text=" — "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_freight_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/iv_long_arrow_right"
+                    android:singleLine="true"
+                    android:text="start_region"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_freight_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_long_arrow_right"
+                    android:singleLine="true"
+                    android:text="end_region"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_freight_from"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="名字"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="时间"
+            android:textColor="#BFC2CD"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_icon"
+            android:layout_alignRight="@id/ll_freight"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_icon"
+            android:singleLine="true"
+            android:text="消息内容"
+            android:textColor="#BFC2CD"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_new_msg_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ic_red_cycle"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/line_contacts_sub" />
+
+</RelativeLayout>

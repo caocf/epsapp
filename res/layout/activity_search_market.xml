@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brown_gray"
+    android:orientation="vertical" >
+
+    
+    <TextView
+        android:id="@+id/tv_market_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:textColor="#a93636"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+       
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <lib.pulltorefresh.PullToRefreshListView
+                android:id="@+id/lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#000000"
+            	android:dividerHeight="1dp"
+                android:cacheColorHint="@color/transparent"
+                android:smoothScrollbar="true"
+                ptr:ptrMode="both"
+                ptr:ptrAnimationStyle="flip"
+                ptr:ptrHeaderTextColor="@android:color/darker_gray" >
+            </lib.pulltorefresh.PullToRefreshListView>
+
+
+        </RelativeLayout>
+
+        
+    </FrameLayout>
+
+
+</LinearLayout>
+

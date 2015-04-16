@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/open_wallet_bg"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:lineSpacingExtra="5sp"
+                    android:text="\t保证金账户是用于您存取保证金的独立账户，保证金专门用于您开通保证金服务。账户的可用金额可以从您的钱包存入，也可取出至钱包。开通保证金服务将增加您的可信度，从而大大提升您下单的成功率。"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5sp"
+                    android:text="\t打开某一保证金服务的滑块开关，即可开通相应业务的保证金服务，同时为您点亮对应的保证金标示。在该业务的范围内，您成功下单一份，就会在您的保证金账户中暂时冻结相应的金额，作为交易保证金。当订单成功完成或被协商取消时，您被冻结的保证金就会重新变为可用余额。若您在交易中存在违约行为，被对方投诉，经平台核查，会扣除您被冻结的保证金，作为对方的赔偿。"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+<!-- 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:lineSpacingExtra="5sp"
+                    android:text="\t订车配货保证金是专门用于保障您订车配货交易业务的服务。账户的可用金额可以从您的钱包存入，也可取出至钱包。开通保证金服务将增加您开展订车配货业务的可信度，从而大大提升您下单的成功率。"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5sp"
+                    android:text="\t打开订车配货保证金服务的滑块开关，即可开通对应的保证金服务，同时为您点亮对应的保证金标识。在订车配货的业务范围内，您成功下单一份，就会冻结您一定的金额作为保证金。当订单成功完成或协商取消后，您被冻结的保证金将会重新变为可用余额。若您在交易中存在违约行为，被对方投诉，经平台核查，会扣除您在本交易中被冻结的保证金，作为对方的赔偿。"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+                     -->
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_item_white_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+            <ImageView
+        android:id="@+id/iv_guarantee"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+            
+        <TextView
+            android:id="@+id/tv_info_guaratee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_guarantee"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_info_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/tv_info_guaratee"
+            android:text=""
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+
+
+        <com.epeisong.base.view.SlipButton
+            android:id="@+id/cb_guaratee"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="65dp"
+            android:layout_height="28dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
